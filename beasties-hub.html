@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYC Beasties Hub | Team 109</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f0f2f5;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: #1a2740;
+      color: white;
+      text-align: center;
+      padding: 28px 20px 22px;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      font-size: 0.85rem;
+      color: #8ecae6;
+      margin-top: 6px;
+      letter-spacing: 0.3px;
+    }
+
+    /* ── GRID ── */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      padding: 20px 14px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: block;
+      text-decoration: none;
+      border-radius: 12px;
+      padding: 22px 16px;
+      color: white;
+      transition: transform 0.12s, opacity 0.12s;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+      opacity: 0.88;
+    }
+
+    .btn-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      line-height: 1.3;
+    }
+
+    .btn-sub {
+      font-size: 0.75rem;
+      margin-top: 5px;
+      opacity: 0.88;
+      line-height: 1.4;
+    }
+
+    /* ── COLORS ── */
+    .red    { background: #c0392b; }
+    .teal   { background: #0d7d6b; }
+    .orange { background: #d4750a; }
+    .green  { background: #2e7d32; }
+    .purple { background: #6a3fa3; }
+    .blue   { background: #1565c0; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 18px 20px 30px;
+      font-size: 0.72rem;
+      color: #888;
+    }
+
+    /* ── MOBILE: single column on very small screens ── */
+    @media (max-width: 360px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NYC BEASTIES HUB</h1>
+    <p>Team 109 &nbsp;|&nbsp; Five Boro Bike Tour 2026 &nbsp;|&nbsp; May 1–5</p>
+  </header>
+
+  <div class="grid">
+
+    <!-- ① Safety & Rules & Contacts -->
+    <a class="btn red" href="https://drive.google.com/drive/folders/1UvBUFBq1piQS91Kbx_2lpHjx5qJJjOMy" target="_blank" rel="noopener">
+      <div class="btn-title">Safety &amp; Contacts</div>
+      <div class="btn-sub">Rules, emergency contacts, buddy system</div>
+    </a>
+
+    <!-- ② Route & Rides & Presentation -->
+    <a class="btn teal" href="https://drive.google.com/drive/folders/18GvtABRx6ioEeiHgKg1USVcgF5IrAKKB" target="_blank" rel="noopener">
+      <div class="btn-title">Route &amp; Rides</div>
+      <div class="btn-sub">Slide deck, climb details, rest stops</div>
+    </a>
+
+    <!-- ③ Itineraries -->
+    <a class="btn orange" href="https://drive.google.com/drive/folders/1Nj1M1wDM6mnCs0Bn2rySz4hJdH5exfs0" target="_blank" rel="noopener">
+      <div class="btn-title">Itineraries</div>
+      <div class="btn-sub">May 1–5 full schedule &amp; ride-day timeline</div>
+    </a>
+
+    <!-- ④ Gear & Prep -->
+    <a class="btn green" href="https://drive.google.com/drive/folders/1WwZgv0lPsMKxsrZhm2PRSVqHSsRzz5C_" target="_blank" rel="noopener">
+      <div class="btn-title">Gear &amp; Prep</div>
+      <div class="btn-sub">What to bring, what's banned</div>
+    </a>
+
+    <!-- ⑤ Photos & Maps -->
+    <a class="btn purple" href="https://drive.google.com/drive/folders/1HuF7y_pXOAkBEiyQujrbU3UONIule5nZ" target="_blank" rel="noopener">
+      <div class="btn-title">Photos &amp; Maps</div>
+      <div class="btn-sub">Route maps, infographics, NYC pics</div>
+    </a>
+
+    <!-- ⑥ Reference Docs -->
+    <a class="btn blue" href="https://drive.google.com/drive/folders/1ew8UMr9BgWmTCwsvqw5eKieALg9LL8qi" target="_blank" rel="noopener">
+      <div class="btn-title">Reference Docs</div>
+      <div class="btn-sub">Pat's survival sheet, fact sheets</div>
+    </a>
+
+  </div>
+
+  <footer>
+    Tap any button to open that folder in Google Drive.<br />
+    No login needed &nbsp;·&nbsp; Works on any phone or computer.
+  </footer>
+
+</body>
+</html>
